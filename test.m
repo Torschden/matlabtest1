@@ -1,6 +1,13 @@
+clear all
+close all 
+clc
+
 disp("calculating")
-data = csvrad('data.csv')
-x = 1 + 1;
+% a = 1;
+% B = 2;
+% save('data.mat',"a","B");
+data = load("data.mat");
+x = data.a + data.B;
 res = fopen("test.txt","wt");
 fprintf(res, '%d', x);
 fclose(res);
