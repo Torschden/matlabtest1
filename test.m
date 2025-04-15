@@ -7,7 +7,7 @@ disp("running")
 % B = 2;
 % save('data.mat',"a","B");
 data = load("data.mat");
-disp("read file")
+disp("read data")
 x = data.a + data.B;
 disp("calculating")
 disp("result: " + x)
